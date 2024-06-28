@@ -58,15 +58,15 @@ $ make rel
 ```
 $ sudo docker run -it --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/nds mmiyoo /bin/bash
 $ cd /nds
-$ make cfg MOD=trimui
+$ make -f Makefile.trimui cfg
 $ make
-$ make rel MOD=trimui
+$ make -f Makefile.trimui rel
 ```
 
 ### How to build code for F(x)tec Pro1 (QX1000)
 ```
-$ make cfg MOD=qx1000
-$ make
+$ make -f Makefile.qx1000 cfg
+$ make -f Makefile.qx1000
 ```
 P.S. runs the commands on Sailfish OS.
 
@@ -75,8 +75,8 @@ P.S. runs the commands on Sailfish OS.
 ## Unit Test
 ### How to build and run unit test
 ```
-$ make cfg MOD=unittest
-$ make MOD=unittest
+$ make -f Makefile.unittest cfg
+$ make -f Makefile.unittest
 ```
 
 &nbsp;
