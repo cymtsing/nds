@@ -59,7 +59,7 @@ $ make rel
 $ sudo docker run -it --rm -u $(id -u ${USER}):$(id -g ${USER}) -v $(pwd):/nds mmiyoo /bin/bash
 $ cd /nds
 $ make -f Makefile.trimui cfg
-$ make
+$ make -f Makefile.trimui
 $ make -f Makefile.trimui rel
 ```
 
